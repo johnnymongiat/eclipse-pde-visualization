@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test
+Bundle-SymbolicName: org.eclipse.pde.visualization.dependency.test
+Bundle-Version: 0.5.0.qualifier
+Fragment-Host: org.eclipse.pde.visualization.dependency;bundle-version="0.5.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.junit;version="4.8.2",
+ org.junit.runner,
+ org.junit.runners;version="4.8.2"

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.pde.visualization.dependency.feature_1.0.0.qualifier.jar" id="org.eclipse.pde.visualization.dependency.feature" version="1.0.0.qualifier">
+      <category name="PDEVisualizationCategory"/>
+   </feature>
+   <category-def name="PDEVisualizationCategory" label="PDE Visualization Incubator Tool"/>
+</site>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="%view.name"
+            icon="icons/obj16/req_plugins_obj.gif"
+            category="org.eclipse.pde.ui"
+            class="org.eclipse.pde.internal.visualization.dependency.views.PluginVisualizationView"
+            id="org.eclipse.pde.visualization.views.SampleView">
+      </view>
+      <view
+            category="org.eclipse.pde.ui"
+            class="org.eclipse.pde.internal.visualization.dependency.ui.FeatureVisualizationView"
+            icon="icons/obj16/req_plugins_obj.gif"
+            id="org.eclipse.pde.visualization.views.FeatureDependenciesView"
+            name="%featureview.name">
+      </view>
+      <!-- TODO experimentation -->
+      <view
+            category="org.eclipse.pde.ui"
+            class="org.eclipse.pde.internal.visualization.dependency.ui.provisional.PluginDependencyGraphVisualizationView"
+            icon="icons/obj16/req_plugins_obj.gif"
+            id="org.eclipse.pde.visualization.views.PluginDependencyGraphVisualizationView"
+            name="Graph Plug-in Dependencies (incubator)">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.pde.ui.PDEPerspective">
+         <view
+               id="org.eclipse.pde.visualization.views.SampleView"
+               relationship="bottom"
+               relative="org.eclipse.ui.editorss">
+         </view>
+         <view
+               id="org.eclipse.pde.visualization.views.FeatureDependenciesView"
+               relationship="bottom"
+               relative="org.eclipse.ui.editorss">
+         </view>
+         <!-- TODO experimentation -->
+         <view
+               id="org.eclipse.pde.visualization.views.PluginDependencyGraphVisualizationView"
+               relationship="bottom"
+               relative="org.eclipse.ui.editorss">
+         </view>
+      </perspectiveExtension>
+   </extension>
+</plugin>
